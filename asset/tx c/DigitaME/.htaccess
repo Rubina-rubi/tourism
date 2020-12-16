@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /DigitaME
+# RewriteBase /DigitaME
+RewriteCond $1 !^(index\.php|DOCX|css|fonts|images|js|web-request|downloads|robots\.txt)
+RewriteRule ^(.*)$ index.php?/$1 [L]
